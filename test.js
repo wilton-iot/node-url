@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -21,7 +22,7 @@
 
 var assert = require('assert');
 
-var url = require('./url');
+var url = require('node-url/url');
 
 // URLs to parse, and expected data
 // { url : parsed }
@@ -1597,3 +1598,5 @@ relativeTests2.forEach(function(relativeTest) {
                  '\nactual:' + actual);
   });
 });
+
+return module.exports;});

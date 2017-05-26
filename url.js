@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -22,7 +23,7 @@
 'use strict';
 
 var punycode = require('punycode');
-var util = require('./util');
+var util = require('node-url/util');
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -97,7 +98,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = require('querystring');
+    querystring = require('qs');
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -730,3 +731,5 @@ Url.prototype.parseHost = function() {
   }
   if (host) this.hostname = host;
 };
+
+return module.exports;});
