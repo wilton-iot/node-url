@@ -20,5 +20,10 @@
     "type": "git",
     "url": "https://github.com/defunctzombie/node-url.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "test.js"
+    ]
+  }
 }

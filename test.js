@@ -574,7 +574,6 @@ var parseTests = {
 
   'http://bucket_name.s3.amazonaws.com/image.jpg': {
     protocol: 'http:',
-    'slashes': true,
     slashes: true,
     host: 'bucket_name.s3.amazonaws.com',
     hostname: 'bucket_name.s3.amazonaws.com',
