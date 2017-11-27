@@ -23,7 +23,7 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
 var test = require("tape-compat");
 var assert = require('assert');
 
-var url = require('node-url/url');
+var url = require('url');
 
 // URLs to parse, and expected data
 // { url : parsed }

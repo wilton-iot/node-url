@@ -23,7 +23,7 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
 'use strict';
 
 var punycode = require('punycode');
-var util = require('node-url/util');
+var util = require('url/util');
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
